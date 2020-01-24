@@ -1,0 +1,17 @@
+dist: trusty
+sudo: required
+
+addons:
+    sonarcloud:
+      organization: "sereiponna-github"
+  script:
+    # other script steps might be done before running the actual analysis
+    - sonar-scanner
+
+cache:
+  directories:
+    - '$HOME/.sonar/cache'
+
+# Don't copy the following part if you are using this project as a starting point of yours
+notifications:
+    email: false
