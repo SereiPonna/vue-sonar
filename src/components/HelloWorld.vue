@@ -32,7 +32,7 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Vue Sonar',
   props: {
     msg: String
   }
