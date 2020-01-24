@@ -4,9 +4,9 @@ sudo: required
 addons:
     sonarcloud:
       organization: "sereiponna-github"
-  script:
-    # other script steps might be done before running the actual analysis
-    - sonar-scanner
+script:
+  # other script steps might be done before running the actual analysis
+  - sonar-scanner
 
 cache:
   directories:
